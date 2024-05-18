@@ -1,6 +1,10 @@
 <h1>A-Record Exercise</h1>
 This tutorial outlines the creation of an A-Record.<br />
 
+<h2>Prerequisite</h2>
+In this project, you should have created a server and a client connected within the same network. If you have not done so, please use this link to take you to <a href="https://github.com/AllanMontalvo/Virtualbox-Active-Directory">Configuring On-premises Active Directory</a> to create your small network and begin this project.
+
+
 <h2>Environments and Technologies Used</h2>
 
 **Technologies and Servies**
