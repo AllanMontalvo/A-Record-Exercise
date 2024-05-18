@@ -1,1 +1,42 @@
-# A-Record-Exercise
+<h1>A-Record Exercise</h1>
+This tutorial outlines the creation of an A-Record.<br />
+
+<h2>Environments and Technologies Used</h2>
+
+**Technologies and Servies**
+- Oracle VM VirtualBox
+- Active Directory Domain Services
+
+**Environment/Operating System**
+- Windows Server 2022
+- Windows 10
+
+<h2>High-Level Deployment and Configuration Steps</h2>
+
+**Step 1: Ping an A-Record**
+- Log in to Client-1 as an admin (mydomain\jane.admin)
+- Open cmd prompt and ping “mainframe”
+- Type nslookup “mainframe” and will fail.
+<p>
+  <img src="https://github.com/AllanMontalvo/A-Record-Exercise/assets/135927674/af1aada6-ac67-4005-84e4-fea96ea868c1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+**Step 2: Create an A-Record**
+- Log into DC-1 as domain admin (mydomain\jane.admin).
+- Open Server Manager and open DNS under Tools.
+- On the left column select DC-1, then Forward Lookup Zones, then mydomain.net.
+- Right-click the left column and select “New Host (A or AAA).
+- Create the name “mainframe” and your IP address be server (10.1.10.2).
+<p> 
+  <img src="https://github.com/AllanMontalvo/A-Record-Exercise/assets/135927674/8ebdb4b7-bec0-4aa6-b392-0e480e2d4a20" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+**Step 3: Verify A-Record**
+- In Client-1, open cmd prompt.
+- Type "ping mainframe"
+<p>
+  <img src="https://github.com/AllanMontalvo/A-Record-Exercise/assets/135927674/f2ba9622-79d8-4ebb-b57b-d6891ba8a513" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<h2>Final Notes</h2>
