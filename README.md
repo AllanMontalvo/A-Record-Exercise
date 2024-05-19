@@ -10,6 +10,7 @@ In this project, you should have created a server and a client connected within 
 **Technologies and Servies**
 - Oracle VM VirtualBox
 - Active Directory Domain Services
+- Command Prompt
 
 **Environment/Operating System**
 - Windows Server 2022
